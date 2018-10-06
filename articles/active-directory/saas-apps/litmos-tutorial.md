@@ -101,21 +101,22 @@ In this section, you enable Azure AD single sign-on in the Azure portal and conf
 	![Configure single sign-on link][4]
 
 1. On the **Single sign-on** dialog, select **Mode** as	**SAML-based Sign-on** to enable single sign-on.
+
  
-	![Single sign-on dialog box](./media/litmos-tutorial/tutorial_litmos_samlbase.png)
+	
 
 1. On the **Litmos Domain and URLs** section, perform the following steps:
 
 	![Litmos Domain and URLs single sign-on information](./media/litmos-tutorial/tutorial_litmos_url.png)
 
-    a. In the **Identifier** textbox, type a URL using the following pattern: `https://<companyname>.litmos.com/account/Login`
+    a. In the **Identifier** textbox, type a URL using the following pattern: `https://<companyname>.litmos.com/integration/splogin`
 
-	b. In the **Reply URL** textbox, type a URL using the following pattern: `https://<companyname>.litmos.com/integration/samllogin`
+	b. In the **Reply URL** textbox, type a URL using the following pattern: `https://<companyname>.litmos.com/integration/splogin`
 
 	> [!NOTE] 
 	> These values are not real. Update these values with the actual Identifier and Reply URL, which are explained later in tutorial or contact [Litmos support team](https://www.litmos.com/contact-us/) to get these values.
 
-1. On the **SAML Signing Certificate** section, click **Certificate(Base64)** and then save the certificate file on your computer.
+1. On the **SAML Signing Certificate** section, copy the App federation Metadata URl and past it a new tab in the address bar of your Browser and then then save the metadata file on your computer.
 
 	![The Certificate download link](./media/litmos-tutorial/tutorial_litmos_certificate.png)
 
@@ -167,9 +168,9 @@ In this section, you enable Azure AD single sign-on in the Azure portal and conf
     
      ![Litmos Application][25] 
      
-	 a. Click **Enable SAML**.
+	 a. Copy
     
-	 b. Open your base-64 encoded certificate in notepad, copy the content of it into your clipboard, and then paste it to the **SAML X.509 Certificate** textbox.
+	 b. Open your XMl metadata file in notepad, copy the content of it into your clipboard, and then paste it to the **SAML Metadata** textbox.
 	 
 	 c. Click **Save Changes**.
 
